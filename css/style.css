@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+body {
+  color: #131520;
+  background-color: #f0e6e6;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+header nav {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.nav-fixed {
+  position: fixed;
+  background-color: rgba(240, 230, 230, 0.7);
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  top: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header .jumbotron {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+header .jumbotron-text {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+header .jumbotron-text h1 {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #f87171;
+}
+
+header .jumbotron-text .jumbotron-text-name {
+  font-size: 40px;
+  font-weight: bold;
+  color: #131520;
+}
+
+header .jumbotron-text .jumbotron-text-name::before {
+  content: "\A";
+  display: block;
+}
+
+header .jumbotron-text h2 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+header .jumbotron-text .jumbotron-text-h2 {
+  color: #52525b;
+}
+
+header .jumbotron-text p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+header .jumbotron-img {
+  width: 100%;
+  align-self: center;
+  text-align: center;
+}
+
+header .jumbotron-img img {
+  width: 80%;
+  border-radius: 50%;
+}
+
+main article {
+  margin-bottom: 40px;
+}
+
+/* About */
+#about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#about h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+
+#about h3 {
+  font-size: 22px;
+}
+
+#about h4 {
+  font-size: 19px;
+}
+
+#about p {
+  font-size: 17px;
+}
+
+#about div {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#about aside {
+  align-self: flex-end;
+  width: 100%;
+}
+
+#about aside img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#about aside ul {
+  list-style-type: none;
+  display: flex;
+}
+
+#about aside ul li {
+  padding: 5px;
+}
+
+#about aside ul li svg{
+  width: 20px;
+}
+
+#about aside a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #52525b;
+  color: #52525b;
+}
+
+#about aside a:hover {
+  color: #f0e6e6;
+  background-color: #f87171;
+  border: 1px solid #f87171;
+}
+
+#about aside svg {
+  fill: currentColor;
+}
+
+/* Portfolio */
+#portfolio h2 {
+  text-align: center;
+  font-size: 25px;
+}
+
+#portfolio h3 {
+  font-size: 22px;
+}
+
+#portfolio p {
+  font-size: 17px;
+}
+
+#portfolio p a {
+  text-decoration: none;
+  color: #131520;
+  font-weight: bold;
+}
+
+#portfolio p a:hover {
+  text-decoration: none;
+  color: #f87171;
+  font-weight: bold;
+}
+
+#portfolio .portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#portfolio .portfolio .card {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px 15px;
+  margin: 10px 0;
+}
+
+#portfolio .portfolio .card img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0 10px;
+}
+
+@media (min-width: 769px) {
+  header {
+    margin-top: 120px;
+  }
+
+  header .jumbotron {
+    flex-direction: row;
+  }
+
+  header .jumbotron-text {
+    align-self: center;
+  }
+
+  header .jumbotron-img {
+    width: 100%;
+    align-self: center;
+    text-align: right;
+  }
+
+  #about {
+    flex-direction: row;
+  }
+
+  #about h2 {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #about div {
+    width: 63%;
+  }
+  
+  #about aside {
+    align-self: flex-end;
+    width: 28%;
+  }
+
+  #about aside h3 {
+    text-align: center;
+  }
+
+  #portfolio .portfolio {
+    justify-content: space-between;
+  }
+
+  #portfolio .portfolio .card {
+    width: 49%;
+  }
+
+  header .jumbotron-text h1 {
+    font-size: 28px;
+  }
+
+  header .jumbotron-text .jumbotron-text-name {
+    font-size: 72px;
+    font-weight: bold;
+  }
+
+  header .jumbotron-text h2 {
+    font-size: 30px;
+  }
+
+  #about h2 {
+    font-size: 28px;
+  }
+  
+  #about h3 {
+    font-size: 24px;
+  }
+  
+  #about h4 {
+    font-size: 20px;
+  }
+  
+  #about p {
+    font-size: 18px;
+  }
+
+  #portfolio h2 {
+    font-size: 28px;
+  }
+  
+  #portfolio h3 {
+    font-size: 24px;
+  }
+  
+  #portfolio p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 0;
+  }
+}
