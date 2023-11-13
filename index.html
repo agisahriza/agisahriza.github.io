@@ -40,15 +40,15 @@
         <div>
           <article>
             <h3>A little about me</h3>
-            <p>Final year student at Computer Education FKIP ULM. Interested in programming, especially in the web. Currently following the Independent Study Program for Front-End Web Developer and React by Dicoding. Having experience as a practicum assistant in "Pemrograman Web 2" course, teaching PHP to Laravel.</p>
+            <p>Fresh graduate of Computer Education at Lambung Mangkurat University. Interested in programming, especially in the field of the web. Have experience in teaching and developing applications.</p>
           </article>
           <article class="skill">
             <h3>My Skill</h3>
             <ul>
-              <li><i class="fa-brands fa-html5"></i></li>
-              <li><i class="fa-brands fa-css3-alt"></i></li>
               <li><i class="fa-brands fa-js"></i></li>
+              <li><i class="fa-brands fa-react"></i></li>
               <li><i class="fa-brands fa-php"></i></li>
+              <li><i class="fa-brands fa-laravel"></i></li>
             </ul>
           </article>
         </div>
@@ -82,7 +82,7 @@
       </article>
       <article id="portfolio" class="container">
         <h2>Portfolio</h2>
-        <div class="portfolio">
+        <div class="portfolio" id="dataList">
           <div class="card">
             <h3><a href="https://agisahriza.github.io/Calculator" target="_blank">Calculator</a></h3>
             <a href="https://agisahriza.github.io/Calculator" target="_blank"><img src="./img/calculator.PNG" alt="Calculator"></a>
@@ -109,13 +109,18 @@
             <p>AS Media is a web-based learning media, created using Bootstrap, Vanilla JS, and Firebase.</p>
           </div>
         </div>
+        <div id="paginationContainer"></div>
       </article>
+      
     </main>
 
     <footer>
       <p>Created by Agi Sahriza</p>
     </footer>
 
-    <script src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.6.5/pagination.min.js"></script> -->
+    <script src="./js/pagination.js"></script>
+    <script src="./js/script.js" type="module"></script>
   </body>
 </html>

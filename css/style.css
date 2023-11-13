@@ -269,6 +269,32 @@ main article {
   margin-top: 10px;
 }
 
+/* pagination */
+.paginationjs {
+  display: flex;
+  justify-content: center;
+}
+
+.paginationjs li {
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.paginationjs li.active a {
+  font-weight: bold;
+}
+
+.paginationjs li.disabled a {
+  opacity: .5;
+  cursor: context-menu;
+}
+
+.paginationjs a {
+  text-decoration: none;
+  color: #131520;
+}
+
 footer {
   width: 100%;
   text-align: center;
